@@ -1,0 +1,29 @@
+.abilities {
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 30px;
+}
+
+.cardWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 90px;
+}
+
+.rowCustom {
+    margin-bottom: 40px;
+}
+
+.buttonWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 775px) {
+    .cardWrapper {
+        flex-direction: column;
+    }
+}

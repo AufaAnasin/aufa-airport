@@ -1,0 +1,20 @@
+.customBtn {
+    background-color: #1D5D9B;
+    border-color: #1D5D9B;
+    color: #FBEEAC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.customIcon {
+    width: 14px;
+    height: 14px;
+    margin-right: 4px;
+}
+
+.customBtn:hover {
+    background-color: #FBEEAC;
+    border-color: white;
+    color: #1D5D9B;
+}

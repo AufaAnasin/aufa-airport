@@ -1,0 +1,66 @@
+.aboutMe {
+    margin-bottom: 24px;
+}
+
+.aboutmeCard {
+    background-color: #1F1F21;
+    border-color: #3D3D3D;
+    color: white;
+    padding: 12px 30px 12px 30px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.imgWrapper {
+    padding: 12px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.aufaimage {
+    width: 326px;
+    height: 405px;
+    border-radius: 16px;
+}
+
+.textWrapper {
+    margin-top: 12px;
+}
+
+.textWrapper h1 {
+    color: #F4D160;
+}
+
+.textWrapper p {
+    font-size: 28px;
+}
+
+@media screen and (max-width: 1200px) {
+    .textWrapper p {
+        font-size: 18px;
+    }
+    .aboutmeCard {
+        display: flex;
+        flex-direction: column;
+    }
+    .textWrapper {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .textWrapper {
+        text-align: center;
+    }
+    .aboutmeCard {
+        display: flex;
+        flex-direction: column;
+    }
+}

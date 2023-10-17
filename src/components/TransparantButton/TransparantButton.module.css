@@ -1,0 +1,19 @@
+.customIcon {
+    width: 14px;
+    height: 14px;
+    margin-right: 4px;
+}
+
+.linkedinButton {
+    border-color: #FBEEAC;
+    color: #75C2F6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.linkedinButton:hover {
+    background-color: #1D5D9B;
+    color: white;
+    border-color: #FBEEAC;
+}

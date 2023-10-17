@@ -1,0 +1,62 @@
+.abilitiesCard {
+    background-color: #1F1F21;
+    color: white;
+    width: 354px;
+    height: 308px;
+    padding: 12px;
+    row-gap: 16px;
+}
+
+.iconFa {
+    width: 50px;
+    height: 50px;
+}
+
+.abilitiesCard h5 {
+    color: #F4D160;
+}
+
+.abilitiesCard p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.44px;
+}
+
+@media screen and (max-width: 980px) {
+    .abilitiesCard {
+        background-color: #1F1F21;
+        width: 100%;
+    }
+    .abilitiesCard p {
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 0.44px;
+    }
+    .abilitiesCard h5 {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 900;
+        letter-spacing: 0.44px;
+    }
+}
+
+@media screen and (max-width: 552px) {
+    .abilitiesCard {
+        background-color: #1F1F21;
+        width: 100%;
+    }
+    .abilitiesCard p {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 0.44px;
+    }
+    .abilitiesCard h5 {
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 900;
+        letter-spacing: 0.44px;
+    }
+}

@@ -1,0 +1,75 @@
+.backgroundImage {
+    width: 100%;
+    height: 100%;
+    background-image: url('../../components/img/hero-bg.jpg');
+    background-size: cover; /* Adjust to 'contain' or '100% 100%' as needed */
+    background-position: center; /* Adjust as needed */
+    background-repeat: no-repeat;
+}
+
+
+.containerWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.typographyWrapper {
+    margin-top: 30vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.helloTagline {
+    color: #F4D160;
+    font-size: 120px;
+    font-weight: 900;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    /* comment */
+}
+
+
+.nameTagline {
+    color: #1D5D9B;
+    font-size: 96px;
+    font-weight: 900; /* Use a bold font weight */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    border-right: 5px solid black;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(16), cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% { border-color: transparent;}
+}
+
+@keyframes typing {
+    from { width: 0;}
+}
+
+
+
+.anas {
+    color: #75C2F6;
+    display: inline;
+    border-bottom: 3px solid #F4D160;
+}
+
+
+@media screen and (max-width: 780px) {
+    .typographyWrapper {
+        margin-top: 30vh;
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .helloTagline {
+        font-size: 72px;
+    }
+    .nameTagline {
+        font-size: 36px;
+    }
+}

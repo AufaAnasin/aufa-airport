@@ -1,0 +1,37 @@
+.rowfirst {
+    margin: 32px 0px;
+}
+
+.aufa {
+    border-radius: 16px;
+}
+.customCol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titleName {
+    color: #75C2F6
+}
+
+.fullName {
+    color: #FBEEAC;
+}
+.mailto {
+    text-decoration: none;
+    color: #1D5D9B;
+}
+
+.mailto:hover {
+    color: #75C2F6
+}
+
+@media screen and (max-width: 768px) {
+    .aufa {
+        margin-bottom: 32px;
+    }
+    .textWrapper p {
+        text-align: justify;
+    }
+}

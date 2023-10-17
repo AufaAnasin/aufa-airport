@@ -1,0 +1,73 @@
+.containerWrapper {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+.typographyWrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonWrapper {
+    display: flex;
+    gap: 16px;
+}
+
+.enthustasticTypo {
+    color: #FBEEAC;
+}
+
+.enthustasticTypoSec {
+    color: #75C2F6;
+}
+
+.customBtn {
+    background-color: #1D5D9B;
+    border-color: #1D5D9B;
+    color: #FBEEAC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.customIcon {
+    width: 14px;
+    height: 14px;
+    margin-right: 4px;
+}
+
+.customBtn:hover {
+    background-color: #FBEEAC;
+    border-color: white;
+    color: #1D5D9B;
+}
+
+.linkedinButton {
+    border-color: #FBEEAC;
+    color: #75C2F6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.linkedinButton:hover {
+    background-color: #1D5D9B;
+    color: white;
+    border-color: #FBEEAC;
+}
+
+.highTagline {
+    color: #1D5D9B;
+}
+
+.description {
+    width: 500px;
+}
+
+@media screen and (max-width: 550px) {
+    .description {
+        width: 300px;
+    }
+}
