@@ -1,5 +1,5 @@
 "use client"
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap'
 import styles from './Navbar.module.css'
@@ -7,37 +7,39 @@ import styles from './Navbar.module.css'
 type Props = {}
 
 export default function MainNavbar({}: Props) {
+  const [navbarClass, setNavbarClass] = useState<string>('');
+
+  const handleScroll = () => {
+    if (window.scrollY > 20) {
+      setNavbarClass(styles.frozen);
+    } else {
+      setNavbarClass(styles.solid);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <>
-    <Navbar collapseOnSelect expand="lg" className={styles.customNavbar}>
+    <Navbar fixed="top" className={`navbar ${navbarClass}`} expand="lg">
       <Container>
-        <Navbar.Brand href="/">Airport</Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
-            <NavDropdown title="Dropdown" id="collapsible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
-          <Nav>
-            <Nav.Link href="#deets">More deets</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              Dank memes
-            </Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
+      <Navbar.Brand href="#">Airport</Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className={`ml-auto`}>
+          <div className={styles.buttonWrapper}>
+          <p href="">Hallo</p>
+          <p href="">Im </p>
+          <p href="">Here</p>
+          </div>
+        </Nav>
+      </Navbar.Collapse>
       </Container>
     </Navbar>
-    </>
-  )
-}
+  );
+};

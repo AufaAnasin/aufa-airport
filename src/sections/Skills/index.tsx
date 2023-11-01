@@ -12,6 +12,7 @@ type Props = {}
 function Skills({}: Props) {
   
   return (
+    <section>
     <div className="container">
       <div className={`row ${styles.abilities}`}>
         <h1 className='mb-2'>My Abilities</h1>
@@ -27,6 +28,7 @@ function Skills({}: Props) {
         </div>
       </div>
     </div>
+    </section>
   )
 }
 

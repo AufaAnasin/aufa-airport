@@ -1,14 +1,15 @@
+"use client"
 import React from 'react'
+import Abilities from 'sections/Abilities'
 import Description from 'sections/Description'
+
 
 type Props = {}
 
-function AboutMe({}: Props) {
+export default function AboutMe({}: Props) {
   return (
-    <>
-    <Description />
-    </>
+      <main>
+      </main>
   )
 }
 
-export default AboutMe

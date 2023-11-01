@@ -6,9 +6,10 @@
   color: white;
 }
 
-main {
+html, body, section {
   max-width: 100vw;
   overflow-x: hidden;
   font-family: 'Roboto', sans-serif;
   background-color: #171718;
+  --line-color: #75C2F6;
 }

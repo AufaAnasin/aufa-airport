@@ -1,4 +1,18 @@
-.customNavbar {
-    background-color: #F4D160;
-    color: #1D5D9B;
+.navbar {
+    transition: background-color 2s;
+}
+  
+.solid {
+    background-color: transparent; /* Set your solid color here */
+}
+  
+.frozen {
+    background-color: #fff; 
+    opacity: 0.8;
+}
+
+.buttonWrapper {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 16px;
 }

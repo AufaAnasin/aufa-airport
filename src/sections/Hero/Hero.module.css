@@ -12,10 +12,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100vh;
 }
 
 .typographyWrapper {
-    margin-top: 30vh;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -58,8 +58,11 @@
 
 
 @media screen and (max-width: 780px) {
+    .containerWrapper {
+        height: 100vh;
+    }
     .typographyWrapper {
-        margin-top: 30vh;
+        margin-top: 1vh;
         font-family: 'Roboto', sans-serif;
         display: flex;
         flex-direction: column;

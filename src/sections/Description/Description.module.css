@@ -1,5 +1,5 @@
 .rowfirst {
-    margin: 32px 0px;
+    margin: 100px 0 0 0;
 }
 
 .aufa {
@@ -33,5 +33,20 @@
     }
     .textWrapper p {
         text-align: justify;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .fullName {
+        font-size: 22px;
+    }
+    .titleName {
+    font-size: 22px;
+    }
+    .textWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
