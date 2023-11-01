@@ -6,11 +6,11 @@ type Props = {}
 function Projects({}: Props) {
   return (
     <>
-    <div className={`container ${styles.customContainer}`}>
+    {/* <div className={`container ${styles.customContainer}`}>
       <div className={styles.cardCustom}>
         Test
       </div>
-    </div>
+    </div> */}
     </>
   )
 }
