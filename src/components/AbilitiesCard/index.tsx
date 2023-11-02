@@ -4,7 +4,7 @@ import styles from './AbilitiesCard.module.css'
 
 
 type Props = {
-  icon: string, 
+  icon: any, 
   tagline: string, 
   description: string
 }
