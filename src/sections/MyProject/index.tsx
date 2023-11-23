@@ -1,6 +1,7 @@
 import React from 'react'
-import styles from './MyProject.module.css'
 import Projects from 'components/ProjectsCard'
+import { ProjectData } from 'data/data'
+import styles from './MyProject.module.css'
 
 type Props = {}
 
@@ -13,10 +14,14 @@ function MyProject({}: Props) {
         marginBottom: "40px",
     }
   return (
-    <section>
+    <section id="project">
         <div className="container-fluid" style={style}>
-            <h1>My Project</h1>
-            <Projects />
+            <h1 className={styles.projectHeader}>My Projects</h1>
+            {ProjectData.map((item) => (
+              <React.Fragment key={item.id}>
+                <Projects id={item.id} images={item.images} projectnames={item.name} link={item.link} />
+              </React.Fragment>
+            ))}
         </div>
     </section>
   )

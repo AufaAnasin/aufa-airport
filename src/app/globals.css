@@ -13,3 +13,7 @@ html, body, section {
   background-color: #171718;
   --line-color: #75C2F6;
 }
+
+html {
+  scroll-behavior: smooth;
+}

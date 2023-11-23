@@ -13,7 +13,7 @@ function TransparantButton({iconButton, textButton, goTo}: Props) {
   return (
     <>
     <Link href={goTo} style={{textDecoration: "none"}}>
-    <button type="button" className={`btn btn-outline-primary ${styles.linkedinButton}`}><span><FontAwesomeIcon className={styles.customIcon} icon={iconButton} /></span>{textButton}</button>
+    <button type="button" className={`btn btn-outline-primary ${styles.linkedinButton}`}><i className={`${iconButton} ${styles.customIcon}`}></i>{textButton}</button>
     </Link>
     </>
   )

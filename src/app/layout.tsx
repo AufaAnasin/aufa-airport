@@ -9,10 +9,10 @@ import MainNavbar from 'components/MainNavbar';
 
 //fontawesomeicon
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faDownload, fas, faBackwardStep } from '@fortawesome/free-solid-svg-icons'
-import { faTwitter, faFontAwesome, faLinkedin, faReact, fab } from '@fortawesome/free-brands-svg-icons'
+import { faDownload, fas, faBackwardStep, faCode, faPeopleGroup } from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faTwitter, faFontAwesome, faLinkedin, faReact, fab } from '@fortawesome/free-brands-svg-icons'
 
-library.add(fas, faTwitter, faFontAwesome, faLinkedin, faReact, faDownload ,faBackwardStep, fab)
+library.add(fas, faCode, faGithub, faTwitter, faFontAwesome, faLinkedin, faReact, faDownload ,faBackwardStep, fab, faPeopleGroup)
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -28,11 +28,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
+      <head>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossOrigin="anonymous" />
+        </head>
       <body>
-        {/* <MainNavbar /> */}
+        <MainNavbar />
         {children}
+        <Footer />
       </body>
-      {/* <Footer /> */}
     </html>
   )
 }

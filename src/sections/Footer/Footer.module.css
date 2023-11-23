@@ -1,0 +1,19 @@
+.footer {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.small {
+    font-size: 12px;
+    margin-bottom: 16px;
+}
+
+.span {
+    font-weight: bold;
+}
+
+.paragraph {
+    font-size: 12px;
+}

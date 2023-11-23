@@ -3,13 +3,12 @@
 }
 
 .aboutmeCard {
-    background-color: #1F1F21;
     border-color: #3D3D3D;
     color: white;
     padding: 12px 30px 12px 30px;
     border-radius: 16px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 20px;
 }
 
@@ -18,16 +17,26 @@
     border-radius: 16px;
     display: flex;
     justify-content: center;
+    
 }
 
 .aufaimage {
-    width: 326px;
-    height: 405px;
-    border-radius: 16px;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border-width: 0.35rem;
+    border-color: white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 .textWrapper {
-    margin-top: 12px;
+    /* margin-top: px; */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .textWrapper h1 {
@@ -35,7 +44,9 @@
 }
 
 .textWrapper p {
-    font-size: 28px;
+    font-size: 18px;
+    width: 50vw;
+    text-align: center;
 }
 
 @media screen and (max-width: 1200px) {
@@ -53,7 +64,13 @@
         align-items: center;
         justify-content: center;
     }
+    .textWrapper p {
+        font-size: 14px;
+        width: 80vw;
+        text-align: center;
+    }
 }
+
 
 @media screen and (max-width: 768px) {
     .textWrapper {

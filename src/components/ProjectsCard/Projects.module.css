@@ -1,6 +1,33 @@
 .cardCustom {
     margin-top: 40px;
+    padding-top: 30px;
+    height: 534px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 80px;
+    object-fit: contain;
+}
+
+.bgColorBlue {
     background-color: #262A56;
     border-radius: 16px;
-    height: 534px;
+}
+
+.bgColorBlueLight {
+    background-color: #75C2F6;
+    border-radius: 16px;
+}
+
+.customImg {
+    width: 800px;
+    height: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .customImg {
+        width: 500px;
+        height: auto;
+    }
 }

@@ -15,9 +15,8 @@ function SolidButton({icon, buttonText, goTo}: Props) {
   return (
     <Link href={goTo} style={{textDecoration: "none"}}>
       <button type="button" className={`btn btn-primary ${styles.customBtn}`}>
-        <span>
-          <FontAwesomeIcon className={styles.customIcon} icon={icon} />
-        </span>{buttonText}
+          <i className={`${icon} ${styles.customIcon}`}></i>
+        {buttonText}
       </button>
     </Link>
   )

@@ -1,0 +1,11 @@
+.experienceHeader {
+    margin-top: 100px;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .experienceHeader {
+        margin-top: 130px;
+        text-align: center;
+    }
+}

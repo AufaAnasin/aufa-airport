@@ -1,6 +1,7 @@
 .containerWrapper {
     padding-top: 64px;
     padding-bottom: 64px;
+    margin-top: 40px;
 }
 .typographyWrapper {
     display: flex;
@@ -64,6 +65,12 @@
 
 .description {
     width: 500px;
+}
+
+@media screen and (max-width: 600px) {
+    .enthustasticTypo {
+        margin-top: 60px;
+    }
 }
 
 @media screen and (max-width: 550px) {

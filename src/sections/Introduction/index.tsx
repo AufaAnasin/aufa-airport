@@ -10,7 +10,7 @@ type Props = {}
 
 function Introduction({}: Props) {
   return (
-    <section>
+    <section id="about" className={styles.aboutsection}>
       <div className="container">
         <div className={styles.containerWrapper}>
             <div className={styles.typographyWrapper}>

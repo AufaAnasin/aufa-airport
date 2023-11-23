@@ -7,7 +7,7 @@ type Props = {}
 function Hero({}: Props) {
   return (
     <>
-    <section>
+    <section id='home'>
     <div className={styles.backgroundImage}>
         <div className="container-fluid">
             <div className={styles.containerWrapper}>

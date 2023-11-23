@@ -2,18 +2,34 @@
     text-align: center;
     margin-top: 90px;
     margin-bottom: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.customSection {
+    display: flex;
+    justify-content: center;
+}
+
+.abilitiesHeader {
+    margin-bottom: 100px;
 }
 
 .cardWrapper {
     display: flex;
+    gap: 30px;
+    margin-bottom: 90px;
+    /* border: 1px solid red; */
     justify-content: center;
     align-items: center;
-    gap: 25px;
-    margin-bottom: 90px;
+    flex-wrap: wrap;
 }
 
 .rowCustom {
-    margin-bottom: 40px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .buttonWrapper {
@@ -25,5 +41,11 @@
 @media screen and (max-width: 775px) {
     .cardWrapper {
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .abilitiesHeader {
+        margin-top: 60px;
     }
 }
