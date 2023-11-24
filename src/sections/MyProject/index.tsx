@@ -17,11 +17,11 @@ function MyProject({}: Props) {
       marginBottom: "40px",
   }
 
-  const { ref } = useSectionInView("Projects", 0.6)
+  const { ref } = useSectionInView("Projects", 0.4)
   
   return (
-    <section id="project" ref={ref}>
-        <div className="container-fluid" style={style}>
+    <section id="project">
+        <div className="container-fluid" style={style} ref={ref}>
             <h1 className={styles.projectHeader}>My Projects</h1>
             {ProjectData.map((item) => (
               <React.Fragment key={item.id}>

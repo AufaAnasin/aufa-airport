@@ -8,7 +8,7 @@ import styles from './TechImUsed.module.css'
 type Props = {}
 
 function TechImUsed({}: Props) {
-  const { ref } = useSectionInView("Skills", 0.6)
+  const { ref } = useSectionInView("Skills", 0.2)
   return (
     <section id="skills">
         <div className="container">
