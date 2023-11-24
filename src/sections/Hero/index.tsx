@@ -1,13 +1,16 @@
-import React from 'react'
+"use client"
+import { useSectionInView } from 'app/hooks/hooks'
+import React, { useEffect } from 'react'
 import styles from './Hero.module.css'
-// import image from 'components/img/hero-bg.jpg'
 
 type Props = {}
 
 function Hero({}: Props) {
+
+  const { ref } = useSectionInView("Home", 0.75)
   return (
     <>
-    <section id='home'>
+    <section id='home' ref={ref}>
     <div className={styles.backgroundImage}>
         <div className="container-fluid">
             <div className={styles.containerWrapper}>

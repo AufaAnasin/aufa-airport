@@ -18,8 +18,7 @@
 .cardWrapper {
     display: flex;
     gap: 30px;
-    margin-bottom: 90px;
-    /* border: 1px solid red; */
+    margin-bottom: 150px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;

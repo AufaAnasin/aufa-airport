@@ -1,16 +1,19 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+"use client"
 import React from 'react'
 import styles from './Introduction.module.css'
 
 // component
 import SolidButton from 'components/SolidButton'
 import TransparantButton from 'components/TransparantButton'
+import { useSectionInView } from 'app/hooks/hooks'
 
 type Props = {}
 
 function Introduction({}: Props) {
+  const { ref } = useSectionInView("About", 0.7)
+
   return (
-    <section id="about" className={styles.aboutsection}>
+    <section id="about" className={styles.aboutsection} ref={ref}>
       <div className="container">
         <div className={styles.containerWrapper}>
             <div className={styles.typographyWrapper}>

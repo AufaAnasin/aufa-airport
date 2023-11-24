@@ -11,6 +11,7 @@ import MainNavbar from 'components/MainNavbar';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faDownload, fas, faBackwardStep, faCode, faPeopleGroup } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faTwitter, faFontAwesome, faLinkedin, faReact, fab } from '@fortawesome/free-brands-svg-icons'
+import ActiveSectionContextProvider from './context/active-section-context';
 
 library.add(fas, faCode, faGithub, faTwitter, faFontAwesome, faLinkedin, faReact, faDownload ,faBackwardStep, fab, faPeopleGroup)
 
@@ -32,9 +33,11 @@ export default function RootLayout({
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossOrigin="anonymous" />
         </head>
       <body>
-        <MainNavbar />
-        {children}
-        <Footer />
+        <ActiveSectionContextProvider>
+          <MainNavbar />
+            {children}
+          <Footer />
+        </ActiveSectionContextProvider>
       </body>
     </html>
   )

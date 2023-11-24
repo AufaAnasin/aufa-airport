@@ -1,15 +1,17 @@
 "use client"
 
-import React, { useState } from 'react'
+import React from 'react'
 import styles from './Navbar.module.css'
 import { motion } from 'framer-motion';
 import { NavbarData } from 'data/data';
 import Link from 'next/link';
+import { useActiveSectionContext } from 'app/context/active-section-context';
 
 type Props = {}
 
 export default function MainNavbar({}: Props) {
-  const [activeSection, setActiveSection] = useState('About')
+
+ const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext()
 
   return (
     <header className={styles.navbarWrapper}>
@@ -24,7 +26,10 @@ export default function MainNavbar({}: Props) {
             initial={{ y: -100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}>
               <Link 
-              onClick={() => setActiveSection(items.name)}
+              onClick={() => {
+                setActiveSection(items.name)
+                setTimeOfLastClick(Date.now())
+              }}
               className={activeSection === items.name ? `${styles.linkStyleSelected}` : `${styles.linkStyle}`} href={items.hash} style={{ textDecoration: 'none' }}>
                 {items.name}
                 {items.name === activeSection && (
