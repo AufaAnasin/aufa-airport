@@ -43,7 +43,7 @@ function AboutMe({}: Props) {
                           }}
                         >
                                 <p>I&apos;m an enthusiastic <b>Frontend Developer</b> with a passion for creating dynamic and interactive user interfaces using React. Highly skilled in HTML, CSS, JavaScript, and modern frontend libraries and frameworks. Strong ability to turn design concepts into functional and responsive web applications. Committed to staying up-to-date with the latest industry trends and technologies.</p>
-                                <TransparantButton iconButton='fa-brands fa-linkedin' textButton='View Linkedin' goTo='https://www.linkedin.com/in/aufaanasin/' /> 
+                                <TransparantButton onClick={() => {}} iconButton='fa-brands fa-linkedin' textButton='View Linkedin' goTo='https://www.linkedin.com/in/aufaanasin/' /> 
                         </motion.div>
                 </div>
             </div>

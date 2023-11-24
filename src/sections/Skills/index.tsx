@@ -10,16 +10,16 @@ type Props = {}
 
 function Skills({}: Props) {
   // for scrolling in view
-  const { ref } = useSectionInView("Abilities")
+  const { ref } = useSectionInView("Abilities", 0.4)
 
   return (
-    <section id='abilities' className={styles.customSection} ref={ref}>
+    <section id='abilities' className={styles.customSection}>
     <div className="container">
       <div className={`row ${styles.abilities}`}>
         <h1 className={`mb-2 ${styles.abilitiesHeader}`}>My Abilities</h1>
       </div>
       <div className={`row ${styles.rowCustom}`}>
-        <div className={styles.cardWrapper}>
+        <div className={styles.cardWrapper} ref={ref}>
           {AbiltiesCardData.map((item) => (
             <React.Fragment key={item.id}>
               <AbilitiesCard icon={item.icon} tagline={item.tagline} description={item.description} />

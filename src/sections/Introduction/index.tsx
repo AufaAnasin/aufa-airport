@@ -22,7 +22,7 @@ function Introduction({}: Props) {
                 <p className={styles.description}>This website is created with NextJS and Typescript, here you can see my project that mostly using <span className={styles.enthustasticTypoSec}>React(Vite)JS</span></p>
                 <div className={styles.buttonWrapper}>
                   <SolidButton icon="fa-solid fa-download" buttonText='Download for CV' goTo='https://drive.google.com/file/d/1er_wXIsIbm2fTXpWyexjIN5WP8QGP1-r/view?usp=share_link' />
-                  <TransparantButton iconButton='fa-brands fa-linkedin' textButton='View Linkedin' goTo='https://www.linkedin.com/in/aufaanasin/' /> 
+                  <TransparantButton onClick={() => {}} iconButton='fa-brands fa-linkedin' textButton='View Linkedin' goTo='https://www.linkedin.com/in/aufaanasin/' /> 
                 </div>
             </div>
 
