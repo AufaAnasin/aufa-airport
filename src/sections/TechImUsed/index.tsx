@@ -14,7 +14,7 @@ function TechImUsed({}: Props) {
         <div className="container">
             <div className={`row ${styles.customRow}`}>
                 <h1 className={styles.TechImUsedHeader}>Stack I&apos;m Used</h1>
-                <div className={styles.cardcontainer} ref={ref}>
+                <div className={styles.cardcontainer}  ref={ref}>
                     {SkillData.map((item) => (
                       <React.Fragment key={item.id}>
                         <SkillCard icon={item.icon} name={item.name} />

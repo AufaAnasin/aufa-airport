@@ -1,0 +1,36 @@
+# deployment
+
+# apiVersion: apps/v1
+# kind: Deployment
+# metadata:
+#   name: aufaairport
+# spec:
+#   replicas: 3
+#   selector:
+#     matchLabels:
+#       app: aufaairport
+#   template:
+#     metadata:
+#       labels:
+#         app: aufaairport
+#     spec:
+#       containers:
+#       - name: aufaairport-container
+#         image: gcr.io/ggairport29/aufaairport:prod
+#         ports:
+#         - containerPort: 80
+
+# expose
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: aufaairport-service
+spec:
+  selector:
+    app: aufaairport
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type: LoadBalancer

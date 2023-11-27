@@ -152,9 +152,7 @@
                 >
                 <PropagateLoader color={'#FBEEAC'} loading={loadingAnimation} />
               </motion.div> ) : (
-                <motion.div variants={fadeInAnimationVariants} initial="initial" whileInView="animate" viewport={{
-                  once: true,
-                }}>
+                <motion.div variants={fadeInAnimationVariants} initial="initial" whileInView="animate">
                   <TransparantButton onClick={sendEmail} iconButton='fas fa-envelope' textButton='Send Email' goTo='#contact'></TransparantButton>
                 </motion.div>
                ) }

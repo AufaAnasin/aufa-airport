@@ -30,6 +30,9 @@ function SkillCard({ icon, name}: Props) {
     variants={fadeInAnimationVariants}
     initial="initial"
     whileInView="animate"
+    viewport={{
+      once: true,
+    }}
     >
         <i className={`${icon}`} style={iconStyle}></i>
         <h2>{name}</h2>
