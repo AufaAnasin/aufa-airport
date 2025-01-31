@@ -160,6 +160,22 @@ export const AbiltiesCardData: AbiltiesType[] = [
 export const ExperienceData: ExperienceType[] = [
     {
         id: 1,
+        title: "Full Stack Developer",
+        company: "Borneo Alumina Indonesia",
+        description: "Create Plan for Operational Digitalization Especially Under Directorat of Finance and Human Captal and General Affair, and build Dept IT Management System using Laravel.",
+        date: 'Nov 2024 - Now',
+        icon: 'suitcase'
+    },
+    {
+        id: 2,
+        title: "Full Stack Developer (Project Based)",
+        company: "TAN Digital",
+        description: "Developed custom forms and workflows to manage business processes, automating tasks operations. I built and optimized REST APIs for efficient data handling and designed user interfaces using modern web technologies to enhance user experience, and make the TRD of it. My work focused on improving system functionality and making processes more intuitive and efficient using Frappe Framework.",
+        date: 'May 2024 - August 2024',
+        icon: 'suitcase'
+    },
+    {
+        id: 3,
         title: "Frontend Developer",
         company: "Telkom Indonesia",
         description: "Creating some Internal Super App with my team using Material-UI, Typescript. The apps is able to display the data using the graph by React Apex, and the details of the data using the Table.",
@@ -167,7 +183,7 @@ export const ExperienceData: ExperienceType[] = [
         icon: 'suitcase'
     },
     {
-        id: 2,
+        id: 4,
         title: "React Developer",
         company: "Automate All",
         description: "Page internationalization using i18next and Making page using ReactJS and styled-component",
@@ -175,7 +191,7 @@ export const ExperienceData: ExperienceType[] = [
         icon: 'suitcase'
     },
     {
-        id: 3,
+        id: 5,
         title: "Coach",
         company: "AIESEC in UNHAS",
         description: "Page internationalization using i18next and Making page using ReactJS and styled-component",
@@ -183,7 +199,7 @@ export const ExperienceData: ExperienceType[] = [
         icon: 'community'
     },
     {
-        id: 4,
+        id: 6,
         title: "Short Course",
         company: "UTHM Malaysia",
         description: "Joining Short Course program from Telkom University and learn how to manage your mind using mind-mapping for Global Knowledge and Information Technology Course",
